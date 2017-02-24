@@ -4,6 +4,21 @@
 
 [![n3-charts lead image](https://cloud.githubusercontent.com/assets/2969388/12079874/36579ec8-b249-11e5-8c7f-ee3f724ff886.png)](http://codepen.io/chaosmail/pen/xZgPmp/)
 
+# Development
+
+It seems like the `release-it` based publishing might be broken.
+Until this is fixed, you can manually publish by doing the following
+
+### Build
+```
+npm install
+gulp
+cp -a .tmp/build build
+```
+### Publish
+Manually bump the version in the package
+`npm publish`
+
 ## Resource
 
 * [Documentation][n3-home]
