@@ -53,6 +53,7 @@ export class Area extends SeriesFactory {
       area.enter()
           .append('path')
           .call(init)
+        // @ts-ignore
         .merge(area)
           .call(update);
 

@@ -236,6 +236,7 @@ export class Tooltip extends BaseFactory {
     items.enter()
         .append('div')
         .call(init)
+      // @ts-ignore
       .merge(items)
         .call(update);
 
@@ -289,6 +290,7 @@ export class Tooltip extends BaseFactory {
     dots.enter()
         .append('g')
         .call(init)
+      // @ts-ignore
       .merge(dots)
         .call(update);
 

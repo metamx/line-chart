@@ -79,9 +79,7 @@ export class AngularJSSyncLayer extends Factory.BaseFactory {
       var onDomainsChange = this.$parse(this.attributes.onDomainsChange);
 
       callbacks.push((domains, {isEndEvent}) => {
-        if (isEndEvent) {
-          onDomainsChange(this.scope.$parent, {$domains: domains});
-        }
+        onDomainsChange(this.scope.$parent, {$domains: domains, isEndEvent});
       });
     }
 

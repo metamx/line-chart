@@ -59,6 +59,7 @@ export class Legend extends BaseFactory {
     items.enter()
         .append('div')
         .call(init)
+      // @ts-ignore
       .merge(items)
         .call(update);
 

@@ -51,6 +51,7 @@ export class Line extends Series.SeriesFactory {
       line.enter()
           .append('path')
           .call(init)
+        // @ts-ignore
         .merge(line)
           .call(update);
 

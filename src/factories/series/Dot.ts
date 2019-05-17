@@ -47,6 +47,7 @@ export class Dot extends Series.SeriesFactory {
           .call(this.eventMgr.datumMove(series, this.options))
           .call(this.eventMgr.datumLeave(series, this.options))
           .call(initPoint)
+        // @ts-ignore
         .merge(dots)
           .transition()
           .call(this.factoryMgr.getBoundFunction('transitions', 'enter'))

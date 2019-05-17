@@ -33,7 +33,7 @@ export interface IPanOptions {
 
 export class Options {
 
-  public deepWatchData: Boolean = true;
+  public deepWatchData: boolean = true;
   public doubleClickEnabled = true;
 
   public tooltipHook: Function;

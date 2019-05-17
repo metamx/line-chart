@@ -86,6 +86,7 @@ export class SeriesFactory extends Factory.BaseFactory {
     groups.enter()
       .append('g')
         .call(init)
+      // @ts-ignore
       .merge(groups)
         .call(update);
 
